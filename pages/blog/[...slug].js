@@ -1,15 +1,16 @@
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
 
 function BlogPostsPage() {
-  const router = useRouter();
+    const router = useRouter();
 
-  console.log(router.query);
+    console.log(router.path);
+    console.log(router.query);
 
-  return (
-    <div>
-      <h1>The Blog Posts</h1>
-    </div>
-  );
+    return (
+        <div>
+            <h1>The Blog Posts</h1>
+        </div>
+    );
 }
 
 export default BlogPostsPage;
