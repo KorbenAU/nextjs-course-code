@@ -34,7 +34,7 @@ function FilteredEventsPage(props) {
   }, [data]);
 
   if (!loadedEvents) {
-    return <p className='center'>Loading...</p>;
+    return <p className="center">Loading...</p>;
   }
 
   const filteredYear = filterData[0];
@@ -57,8 +57,8 @@ function FilteredEventsPage(props) {
         <ErrorAlert>
           <p>Invalid filter. Please adjust your values!</p>
         </ErrorAlert>
-        <div className='center'>
-          <Button link='/events'>Show All Events</Button>
+        <div className="center">
+          <Button link="/events">Show All Events</Button>
         </div>
       </Fragment>
     );
@@ -78,8 +78,8 @@ function FilteredEventsPage(props) {
         <ErrorAlert>
           <p>No events found for the chosen filter!</p>
         </ErrorAlert>
-        <div className='center'>
-          <Button link='/events'>Show All Events</Button>
+        <div className="center">
+          <Button link="/events">Show All Events</Button>
         </div>
       </Fragment>
     );
